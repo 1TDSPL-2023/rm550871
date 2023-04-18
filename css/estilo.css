@@ -1,6 +1,7 @@
 /*utilizando a directiva @import*/
 @import url("./cabecalho.css");
 @import url("./conteudo.css");
+@import url("./rodape");
 
 *{
     margin: 0;
