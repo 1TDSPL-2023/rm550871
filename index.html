@@ -1,99 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Layout</title>
-    <link rel="stylesheet" href="./css/estilo.css"
-</head>
-<body>
-   
-    <!--CABEÇALHO-->
-    <!--header>img+nav>a*3[href=#]{Item-$}-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Layout</title>
+        <link rel="stylesheet" href="./css/estilo.css">
+
+        <script>
+
+            //COMENTÁRIO DE LINHA
     
-    <header class="cabecalho">
-        <img src="./img/logo.png" alt="Monitor de computador">
-        <nav>
-            <a href="#">Item-1</a>
-            <a href="#">Item-2</a>
-            <a href="#">Item-3</a>
-        </nav>
-    </header>
-    <!--CABEÇALHO-->
+            /*
+                COMENTÁRIO DE BLOCO
+            */
+    
+            //Declarando variáveis com a palavra reservada ( var )
+            var nr1 = 10;
+            var nr2 = 5;
+    
+            //Objetos que dão saida em informações no Javascript
+    
+            //console.log(parâmetro) = Demonstra a saída no console da ferramenta do desenvolvedor.
+            console.log(nr1 + nr2);
+    
+    
+        </script>
 
-    <h2 class="tit-sec">Seção de Fotos</h2>
-
-    <!--CONTEUDO-->
-    <!--section.conteudo>div*6>img+p>{Legenda}-->
-
-    <section class="conteudo">
-        <div>
-            <img src="./img/lobo1.jpg" alt="Lobo">
-            <p>Legenda</p>
-        </div>
-        <div>
-            <img src="./img/lobo2.jpg" alt="Lobo">
-            <p>Legenda</p>
-        </div>
-        <div>
-            <img src="./img/lobo3.jpg" alt="Lobo">
-            <p>Legenda</p>
-        </div>
-        <div>
-            <img src="./img/lobo4.jpg" alt="Lobo">
-            <p>Legenda</p>
-        </div>
-        <div>
-            <img src="./img/lobo5.jpg" alt="Lobo">
-            <p>Legenda</p>
-        </div>
-        <div>
-            <img src="./img/lobo6.jpg" alt="Lobo">
-            <p>Legenda</p>
-        </div>
-    </section>
-
-    <!--CONTEUDO-->
-
-    <!--RODAPE-->
-    <footer>
-        <h2>Fale conosco</h2>
-        <nav>
-            <a href="#"><img src="./img/social-1.png"</a>
-            <a href="#"><img src="./img/social-2.png"</a>
-            <a href="#"><img src="./img/social-3.png"</a>
+    </head>
+    <body>
+    
+        <!--CABEÇALHO-->
+        <!--header>img+nav>a*3[href=#]{Item-$}-->
         
-        </nav>
+        <header class="cabecalho">
+            <img src="./img/logo.png" alt="Monitor de computador">
+            <nav>
+                <a href="#">Item-1</a>
+                <a href="#">Item-2</a>
+                <a href="#">Item-3</a>
+            </nav>
+        </header>
+        <!--CABEÇALHO-->
 
-        <div>
-            <form action="/apelido" method="get" onsubmit="return true">
-                <fieldset>
-                    <legend>Contato</legend>
-                    <div>
-                        <label for "idEmail">Email</label>
-                        <input type="email" email="txtEmail" id="idEmail" required placeholder="Email">
-                    </div>
+        <h2 class="tit-sec">Seção de Fotos</h2>
 
-                    <div>
-                        <label for="idPass">Senha</label>
-                        <input type="password" name="txtPass" id="idPass" required placeholder="Senha">
-                    </div>
-                    
-                    <div>
-                        <label for="idGrava">Guardar Dados</label>
-                        <input type="checkbox" name="txtGrava" id="idGrava" required>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar">                        
-                    </div>
-                </fieldset>
+        <!--CONTEUDO-->
+        <!--section.conteudo>div*6>img+p>{Legenda}-->
+
+        <section class="conteudo">
+            <div>
+                <img src="./img/lobo1.jpg" alt="Lobo">
+                <p>Legenda</p>
+            </div>
+            <div>
+                <img src="./img/lobo2.jpg" alt="Lobo">
+                <p>Legenda</p>
+            </div>
+            <div>
+                <img src="./img/lobo3.jpg" alt="Lobo">
+                <p>Legenda</p>
+            </div>
+            <div>
+                <img src="./img/lobo4.jpg" alt="Lobo">
+                <p>Legenda</p>
+            </div>
+            <div>
+                <img src="./img/lobo5.jpg" alt="Lobo">
+                <p>Legenda</p>
+            </div>
+            <div>
+                <img src="./img/lobo6.jpg" alt="Lobo">
+                <p>Legenda</p>
+            </div>
+        </section>
+
+        <!--CONTEUDO-->
+
+        <!--RODAPE-->
+        <footer class="rodape">
+            <h2>Fale conosco</h2>
+
+            <div>
+                <form action="/apelido" method="get" onsubmit="return true">
+                    <fieldset>
+                        <legend>Contato</legend>
+                        <div>
+                            <label for "idEmail">Email</label>
+                            <input type="email" email="txtEmail" id="idEmail" required placeholder="Email">
+                        </div>
+
+                        <div>
+                            <label for="idPass">Senha</label>
+                            <input type="password" name="txtPass" id="idPass" required placeholder="Senha">
+                        </div>
+                        
+                        <div>
+                            <label for="idGrava">Guardar Dados</label>
+                            <input type="checkbox" name="txtGrava" id="idGrava" required>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar">                        
+                        </div>
+                    </fieldset>
+                
+                
+                </form>
+            </div>
+
+            <nav>
+                <a href="#"><img src="./img/social-1.png"</a>
+                <a href="#"><img src="./img/social-2.png"</a>
+                <a href="#"><img src="./img/social-3.png"</a>
             
-            
-            </form>
-        </div>
-    </footer>
-    <!--RODAPE-->
+            </nav>
 
-</body>
+        </footer>
+        <!--RODAPE-->
+
+    </body>
 </html>
