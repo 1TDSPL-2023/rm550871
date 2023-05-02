@@ -7,7 +7,7 @@
         <title>My Layout</title>
         <link rel="stylesheet" href="./css/estilo.css">
 
-        <script>
+        <script src="./js/script.js">
 
             //COMENTÁRIO DE LINHA
     
@@ -16,14 +16,18 @@
             */
     
             //Declarando variáveis com a palavra reservada ( var )
-            var nr1 = 10;
-            var nr2 = 5;
+           // var nr1 = 10;
+           // var nr2 = 5;
     
             //Objetos que dão saida em informações no Javascript
     
             //console.log(parâmetro) = Demonstra a saída no console da ferramenta do desenvolvedor.
-            console.log(nr1 + nr2);
-    
+           // console.log(nr1 + nr2);
+           // Atrelar um evento click à um elemento HTML
+           //<h2 id="titulo" class="tit-sec">Seção Fotos</h2>
+           //const h2Element = document.getElementById("titulo")
+
+           //console.log(h2Element.textContent);
     
         </script>
 
@@ -44,6 +48,13 @@
         <!--CABEÇALHO-->
 
         <h2 class="tit-sec">Seção de Fotos</h2>
+
+        <script>
+
+            const h2Element = document.getElementById("titulo")
+            console.log(h2Element.textContent);
+
+        </script>
 
         <!--CONTEUDO-->
         <!--section.conteudo>div*6>img+p>{Legenda}-->
@@ -86,7 +97,7 @@
                     <fieldset>
                         <legend>Contato</legend>
                         <div>
-                            <label for "idEmail">Email</label>
+                            <label for="idEmail">Email</label>
                             <input type="email" email="txtEmail" id="idEmail" required placeholder="Email">
                         </div>
 
